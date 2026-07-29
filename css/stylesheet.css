@@ -2,21 +2,16 @@
 
 :root {
    color-scheme: light dark;
-
    --color_white: #E5E6ED;
    --color_gray: #808080;
    --color_black: #101115;
-
-   --color_Personalblue: #99a8ff;
-   --color_misskeyio: #91c948;
+   --color_blue: #99a8ff;
 
    font-family: "Kode Mono", monospace;
    font-optical-sizing: auto;
    font-weight: 400;
    font-style: normal;
-
    line-height: 180%;
-
    user-select: none
 }
 
@@ -57,9 +52,9 @@
 
 .Symbol{ width: 84px; }
 
-/** btn**/
+/** link**/
 
-[class^="btn-"] { 
+[class^="link-"] { 
    display:inline-block;
    width: 170px;
    margin: 2px 5px;
@@ -68,19 +63,19 @@
    color:var(--color_gray);
 }
 
-.btn-index:before { content: "→ lab.takeno.tech"; }
-.btn-io:before { content: "→ misskey.io"; }
+.link-lab:before { content: "→ lab.takeno.tech"; }
+.link-hub:before { content: "→ hub.takeno.tech"; }
 
-.btn-index:hover::before {
+.link-lab:hover::before {
    content: "→ lab.takeno.tech";
    text-decoration:underline;
-   color:var(--color_Personalblue);
+   color:var(--color_blue);
 }
 
-.btn-io:hover::before {
-   content: "→ misskey.io";
+.link-hub:hover::before {
+   content: "→ hub.takeno.tech";
    text-decoration:underline;
-   color:var(--color_misskeyio);
+   color:var(--color_blue);
 }
 
 /* coffee animation */
@@ -120,7 +115,7 @@
 
 @keyframes steam-animation-1 {
     0% { opacity: 0; transform: translateY(0); }
-    25% { opacity: 0.7; transform: translateY(-5px); }
+    25% { opacity: 0.85; transform: translateY(-5px); }
     100% { opacity: 0; transform: translateY(-20px); }
 }
 
