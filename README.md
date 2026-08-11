@@ -1,1 +1,1 @@
-https://takeno.tech
+front-page
